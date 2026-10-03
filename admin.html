@@ -1,194 +1,1505 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SD Inpres 1 Tanamodindi</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Font: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-  </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Inpres 1 Tanamodindi Kota Palu - Portal Resmi & CMS Admin</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="google-fonts-link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap">
 
-  <!-- 1. HEADER & NAVIGASI -->
-  <header data-cms="header_nav" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-blue-500/20">
-          SD
-        </div>
-        <h1 class="cms-title text-xl font-bold tracking-tight text-slate-900">SD Inpres 1 Tanamodindi</h1>
-      </div>
-      <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
-        <a href="#hero" class="hover:text-blue-600 transition-colors">Beranda</a>
-        <a href="#mulok" class="hover:text-blue-600 transition-colors">Mulok Kaili</a>
-        <a href="#profil" class="hover:text-blue-600 transition-colors">Profil</a>
-        <a href="#publik" class="hover:text-blue-600 transition-colors">Informasi Publik</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="max-w-7xl mx-auto px-6 py-10 space-y-16">
-
-    <!-- 2. HERO & STATISTIK -->
-    <section id="hero" data-cms="hero_stats" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 text-white p-8 md:p-14 shadow-2xl">
-      <div class="relative z-10 max-w-3xl space-y-6">
-        <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold tracking-wide uppercase">
-          Portal Resmi Sekolah
-        </span>
-        <h2 class="cms-title text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
-          Selamat Datang di SD Inpres 1 Tanamodindi
-        </h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed">
-          Mewujudkan generasi yang cerdas, berkarakter, bermartabat, dan tetap menjunjung tinggi kearifan lokal kebudayaan Kaili.
-        </p>
-        
-        <!-- Kartu Statistik -->
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6">
-          <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10">
-            <div class="text-2xl md:text-3xl font-extrabold text-blue-400">350+</div>
-            <div class="text-xs md:text-sm text-slate-300 mt-1">Siswa Aktif</div>
-          </div>
-          <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10">
-            <div class="text-2xl md:text-3xl font-extrabold text-blue-400">24</div>
-            <div class="text-xs md:text-sm text-slate-300 mt-1">Tenaga Pengajar</div>
-          </div>
-          <div class="col-span-2 md:col-span-1 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10">
-            <div class="text-2xl md:text-3xl font-extrabold text-blue-400">A</div>
-            <div class="text-xs md:text-sm text-slate-300 mt-1">Akreditasi Sekolah</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. SEKSI MULOK KAILI -->
-    <section id="mulok" data-cms="mulok_kaili" class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200/80 shadow-sm space-y-6">
-      <div class="flex items-center gap-3">
-        <div class="w-2 h-8 bg-amber-500 rounded-full"></div>
-        <h2 class="cms-title text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
-          Mulok Kaili
-        </h2>
-      </div>
-      <p class="text-slate-600 leading-relaxed text-base max-w-4xl">
-        Program Muatan Lokal (Mulok) Bahasa dan Kebudayaan Kaili diselenggarakan untuk menanamkan rasa cinta tanah air serta melestarikan adat dan nilai-nilai luhur budaya Kaili sejak dini.
-      </p>
-      
-      <div class="grid md:grid-cols-3 gap-6 pt-2">
-        <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200/60 space-y-3">
-          <h3 class="font-semibold text-slate-900 text-lg">Bahasa Kaili</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Pembelajaran kosakata sehari-gara dan tata tutur bahasa daerah yang santun.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200/60 space-y-3">
-          <h3 class="font-semibold text-slate-900 text-lg">Seni & Tradisi</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Pengenalan tarian daerah, lagu-lagu tradisional, serta busana adat Kaili.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200/60 space-y-3">
-          <h3 class="font-semibold text-slate-900 text-lg">Kearifan Lokal</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Penerapan nilai kebersamaan (Sipakaboro) dan gotong royong dalam kehidupan sekolah.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. PROFIL DAN SAMBUTAN -->
-    <section id="profil" data-cms="profil_sambutan" class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200/80 shadow-sm">
-      <div class="grid md:grid-cols-12 gap-8 items-center">
-        <div class="md:col-span-4 flex justify-center">
-          <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-slate-100 border-4 border-white shadow-xl flex items-center justify-center text-slate-400 font-medium">
-            [ Foto Kepala Sekolah ]
-          </div>
-        </div>
-        <div class="md:col-span-8 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-2 h-8 bg-blue-600 rounded-full"></div>
-            <h2 class="cms-title text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
-              Profil & Sambutan
-            </h2>
-          </div>
-          <p class="text-slate-600 leading-relaxed text-base">
-            "Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa. Melalui website ini, kami berkomitmen memberikan transparansi informasi serta wadah komunikasi antara pihak sekolah, orang tua siswa, dan masyarakat luas. Kami terus berupaya meningkatkan mutu pendidikan di SD Inpres 1 Tanamodindi."
-          </p>
-          <div class="pt-2">
-            <p class="font-bold text-slate-900">Kepala Sekolah</p>
-            <p class="text-sm text-slate-500">SD Inpres 1 Tanamodindi</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. SEKSI KONTEN PUBLIK -->
-    <section id="publik" data-cms="konten_publik" class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200/80 shadow-sm space-y-6">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="w-2 h-8 bg-emerald-500 rounded-full"></div>
-          <h2 class="cms-title text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
-            Seksi Konten Publik
-          </h2>
-        </div>
-      </div>
-
-      <!-- Kartu Pengumuman / Berita -->
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all space-y-3">
-          <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold">Pengumuman</span>
-          <h3 class="text-lg font-bold text-slate-900">Penerimaan Peserta Didik Baru (PPDB)</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Informasi alur dan persyaratan pendaftaran calon siswa baru tahun ajaran mendatang.</p>
-        </div>
-        <div class="p-6 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all space-y-3">
-          <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold">Kegiatan</span>
-          <h3 class="text-lg font-bold text-slate-900">Pentas Seni & Gelar Budaya Kaili</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Dokumentasi dan jadwal penampilan karya siswa-siswi dalam melestarikan budaya daerah.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="border-t border-slate-200 bg-white py-8 mt-12 text-center text-slate-500 text-sm">
-    <p>&copy; SD Inpres 1 Tanamodindi. All rights reserved.</p>
-  </footer>
-
-  <!-- SKRIP CMS KITA (TIDAK BERUBAH) -->
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      try {
-        const response = await fetch('settings.json');
-        if (!response.ok) return;
-
-        const settings = await response.json();
-
-        Object.keys(settings).forEach(key => {
-          const config = settings[key];
-          const element = document.querySelector(`[data-cms="${key}"]`);
-
-          if (element) {
-            // Tampilkan / Sembunyikan
-            element.style.display = config.is_visible ? '' : 'none';
-
-            // Ubah Font, Warna, dan Ukuran
-            if (config.font_family) element.style.fontFamily = config.font_family;
-            if (config.font_color) element.style.color = config.font_color;
-            if (config.font_size) element.style.fontSize = `${config.font_size}px`;
-
-            // Ubah Teks Judul Menu
-            const titleEl = element.querySelector('.cms-title');
-            if (titleEl && config.menu_name) {
-              titleEl.textContent = config.menu_name;
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: 'var(--brand-50, #f0f9ff)',
+                            100: 'var(--brand-100, #e0f2fe)',
+                            500: 'var(--brand-500, #0284c7)',
+                            600: 'var(--brand-600, #0284c7)',
+                            700: 'var(--brand-700, #0369a1)',
+                            800: 'var(--brand-800, #075985)',
+                            900: 'var(--brand-900, #0c4a6e)',
+                        },
+                        sdred: '#c2410c',
+                    }
+                }
             }
-          }
-        });
-      } catch (error) {
-        console.error('Gagal memuat konfigurasi CMS:', error);
-      }
-    });
-  </script>
+        }
+    </script>
 
+    <style>
+        :root {
+            --brand-primary: #1e40af;
+            --brand-secondary: #0369a1;
+            --font-family-current: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family-current);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .bg-brand-primary { background-color: var(--brand-primary); }
+        .text-brand-primary { color: var(--brand-primary); }
+        .border-brand-primary { border-color: var(--brand-primary); }
+        .hover\:bg-brand-dark:hover { filter: brightness(0.9); }
+
+        .kaili-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#38bdf8 0.75px, transparent 0.75px), radial-gradient(#38bdf8 0.75px, #0f172a 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.2);
+            border-radius: 99px;
+        }
+
+        /* Glassmorphism effects */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col antialiased">
+
+    <div id="top-bar" class="bg-slate-900 text-white text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 text-slate-300">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-amber-400"></i> Jl. Tanamodindi No. 12, Kota Palu, Sulawesi Tengah</span>
+                <span class="hidden md:inline-flex items-center gap-1.5"><i class="fa-solid fa-phone text-emerald-400"></i> (0451) 421-XXX</span>
+                <span class="hidden lg:inline-flex items-center gap-1.5"><i class="fa-solid fa-envelope text-sky-400"></i> sdinpres1tanamodindi@sch.id</span>
+            </div>
+            <div class="flex items-center gap-3 ml-auto">
+                <button onclick="toggleDarkMode()" class="px-2.5 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 transition text-xs flex items-center gap-1.5 border border-slate-700">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    <span id="theme-text" class="hidden sm:inline">Mode Gelap</span>
+                </button>
+                <button onclick="openAdminModal()" class="px-3 py-1 rounded-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold transition text-xs flex items-center gap-1.5 shadow">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span id="admin-btn-label">CMS Admin</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 dark:border-slate-800 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & School Name -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 via-red-600 to-blue-700 p-0.5 shadow-md group-hover:scale-105 transition transform">
+                        <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-school text-brand-primary text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest font-extrabold text-amber-600 dark:text-amber-400">Pendidikan Berkarakter Kaili</div>
+                        <h1 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white leading-tight tracking-tight">
+                            SD Inpres 1 Tanamodindi
+                        </h1>
+                        <p class="text-[10px] text-slate-500 dark:text-slate-400">Kota Palu, Sulawesi Tengah</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-1 font-medium text-sm">
+                    <a href="#hero" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Beranda</a>
+                    <a href="#section-mulok" id="nav-mulok" class="px-3 py-2 rounded-lg text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40 transition font-semibold"><i class="fa-solid fa-crown mr-1"></i> Mulok Kaili</a>
+                    <a href="#section-profil" id="nav-profil" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Profil</a>
+                    <a href="#section-guru" id="nav-guru" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Guru & Staf</a>
+                    <a href="#section-berita" id="nav-berita" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Berita</a>
+                    <a href="#section-dokumen" id="nav-dokumen" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Unduhan</a>
+                    <a href="#section-galeri" id="nav-galeri" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Galeri</a>
+                    <a href="#section-hub" id="nav-hub" class="px-3 py-2 rounded-lg text-blue-600 dark:text-blue-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-950/40 transition"><i class="fa-solid fa-link mr-1"></i> Hub Tautan</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 focus:outline-none">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 space-y-2">
+            <a href="#hero" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
+            <a href="#section-mulok" id="mobile-nav-mulok" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-amber-600 font-semibold hover:bg-amber-50 dark:hover:bg-amber-950/40">Mulok Kaili</a>
+            <a href="#section-profil" id="mobile-nav-profil" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Profil & Visi Misi</a>
+            <a href="#section-guru" id="mobile-nav-guru" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Guru & Staf</a>
+            <a href="#section-berita" id="mobile-nav-berita" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Berita & Agenda</a>
+            <a href="#section-dokumen" id="mobile-nav-dokumen" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Area Unduhan</a>
+            <a href="#section-galeri" id="mobile-nav-galeri" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Galeri Foto</a>
+            <a href="#section-hub" id="mobile-nav-hub" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-blue-600 font-semibold hover:bg-blue-50 dark:hover:bg-blue-950">Hub Tautan Resmi (s.id)</a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative overflow-hidden bg-slate-900 text-white py-20 lg:py-28">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-slate-900/95 to-amber-950/80 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=80" alt="Gedung Sekolah SD" class="absolute inset-0 w-full h-full object-cover object-center opacity-30">
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-award"></i> Sekolah Penggerak & Pelestari Budaya Kaili
+                    </div>
+                    <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                        Mewujudkan Generasi Cerdas, Berkarakter & Berbudaya Local
+                    </h1>
+                    <p id="hero-sub" class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Selamat datang di Portal Resmi SD Inpres 1 Tanamodindi Kota Palu. Wadah informasi terpadu, muatan lokal bahasa Kaili, dan transparansi administrasi sekolah.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#section-mulok" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold shadow-lg shadow-amber-500/20 transition flex items-center gap-2">
+                            <i class="fa-solid fa-book-open"></i> Jelajahi Mulok Kaili
+                        </a>
+                        <a href="#section-hub" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold border border-slate-700 transition flex items-center gap-2">
+                            <i class="fa-solid fa-share-nodes"></i> Hub Link s.id
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Stats Box -->
+                <div class="lg:col-span-4">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-3xl space-y-6 shadow-2xl">
+                        <h3 class="text-lg font-bold text-amber-400 border-b border-white/10 pb-3 flex items-center justify-between">
+                            <span>Sekilas Info Sekolah</span>
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-white/5">
+                                <div id="stat-siswa" class="text-2xl font-black text-amber-400">320+</div>
+                                <div class="text-xs text-slate-300">Siswa Active</div>
+                            </div>
+                            <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-white/5">
+                                <div id="stat-guru" class="text-2xl font-black text-sky-400">22</div>
+                                <div class="text-xs text-slate-300">Guru & Staf</div>
+                            </div>
+                            <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-white/5">
+                                <div id="stat-akreditasi" class="text-2xl font-black text-emerald-400">A</div>
+                                <div class="text-xs text-slate-300">Akreditasi</div>
+                            </div>
+                            <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-white/5">
+                                <div id="stat-rombel" class="text-2xl font-black text-purple-400">12</div>
+                                <div class="text-xs text-slate-300">Rombongan Belajar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN DYNAMIC CONTENT CONTAINER -->
+    <main class="flex-grow space-y-20 py-12">
+
+        <section id="section-mulok" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="kaili-pattern rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden border border-amber-500/30">
+                    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8 space-y-4">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/40 text-xs font-semibold">
+                                <i class="fa-solid fa-masks-theater"></i> Program Unggulan Khas Palu
+                            </div>
+                            <h2 class="text-2xl sm:text-4xl font-extrabold text-amber-400">
+                                Muatan Lokal Bahasa & Budaya Kaili
+                            </h2>
+                            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                SD Inpres 1 Tanamodindi berkomitmen melestarikan kearifan lokal Kota Palu melalui pembelajaran Bahasa Kaili (Lede/Ija), kosa kata harian, peribahasa, serta seni kriya tradisional bagi para peserta didik.
+                            </p>
+                            
+                            <!-- Vocabulary Quick Cards -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                                <div class="bg-slate-800/90 p-3 rounded-xl border border-amber-500/20">
+                                    <div class="text-amber-300 font-bold text-sm">Tabea</div>
+                                    <div class="text-xs text-slate-400">Permisi / Maaf</div>
+                                </div>
+                                <div class="bg-slate-800/90 p-3 rounded-xl border border-amber-500/20">
+                                    <div class="text-amber-300 font-bold text-sm">Kula</div>
+                                    <div class="text-xs text-slate-400">Sahabat / Teman</div>
+                                </div>
+                                <div class="bg-slate-800/90 p-3 rounded-xl border border-amber-500/20">
+                                    <div class="text-amber-300 font-bold text-sm">Maniu</div>
+                                    <div class="text-xs text-slate-400">Mandi</div>
+                                </div>
+                                <div class="bg-slate-800/90 p-3 rounded-xl border border-amber-500/20">
+                                    <div class="text-amber-300 font-bold text-sm">Ngana</div>
+                                    <div class="text-xs text-slate-400">Anak-Anak</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 text-center">
+                            <div class="bg-slate-900/90 p-6 rounded-2xl border border-amber-500/30 space-y-4">
+                                <div class="w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto text-2xl font-bold">
+                                    <i class="fa-solid fa-compact-disc"></i>
+                                </div>
+                                <h4 class="font-bold text-amber-300 text-lg">Materi Mulok Digital</h4>
+                                <p class="text-xs text-slate-400">Unduh kamus mini dan lembar kerja peserta didik (LKPD) Kaili.</p>
+                                <a href="#section-dokumen" class="inline-block w-full py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition">Lihat Modul Mulok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-sambutan" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700/60 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-4 text-center">
+                            <div class="relative inline-block">
+                                <img id="kepsek-foto" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Kepala Sekolah" class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl object-cover shadow-xl border-4 border-amber-400 mx-auto">
+                                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-slate-900 text-amber-400 text-xs px-4 py-1 rounded-full font-bold shadow">
+                                    Kepala Sekolah
+                                </div>
+                            </div>
+                            <h3 id="kepsek-nama" class="mt-6 text-xl font-bold text-slate-900 dark:text-white">Dra. Hajah Fatimah, M.Pd.</h3>
+                            <p id="kepsek-nip" class="text-xs text-slate-500 dark:text-slate-400">NIP. 19680312 199203 2 004</p>
+                        </div>
+                        <div class="md:col-span-8 space-y-4">
+                            <div class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">Sambutan Pimpinan</div>
+                            <h3 id="sambutan-judul" class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                                Selamat Datang di Website Resmi SD Inpres 1 Tanamodindi
+                            </h3>
+                            <p id="sambutan-isi" class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                                Assalamu'alaikum Warahmatullahi Wabarakatuh dan Salam Sejahtera untuk kita semua. Puji syukur kita panjatkan kehadirat Tuhan Yang Maha Esa atas terwujudnya situs portal resmi sekolah. Situs ini dirancang untuk memudahkan akses informasi bagi siswa, orang tua murid, masyarakat, serta alumni. Kami terus berkomitmen memberikan layanan pendidikan terbaik berbasis teknologi digital tanpa melupakan kearifan lokal Kaili.
+                            </p>
+                            <div class="pt-2 flex items-center gap-3">
+                                <div class="w-10 h-0.5 bg-amber-500"></div>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">SD Inpres 1 Tanamodindi Palu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-profil" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Profil Lembaga</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Sejarah, Visi & Misi Sekolah</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Landasan nilai dan rekam jejak perjuangan pendidikan di Tanamodindi, Palu.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Sejarah Box -->
+                    <div id="box-sejarah" class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-4">
+                        <div class="flex items-center gap-3 text-amber-500">
+                            <i class="fa-solid fa-landmark text-2xl"></i>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Sejarah Singkat</h3>
+                        </div>
+                        <p id="sejarah-teks" class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            SD Inpres 1 Tanamodindi didirikan untuk melayani kebutuhan pendidikan dasar masyarakat Tanamodindi dan sekitarnya di Kota Palu. Seiring berjalannya waktu, sekolah ini terus berkembang dalam mutu akademis, sarana prasarana, serta menjadi pelopor pembinaan budaya Kaili di tingkat sekolah dasar.
+                        </p>
+                    </div>
+
+                    <!-- Visi Misi Box -->
+                    <div id="box-visimisi" class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-6">
+                        <div>
+                            <div class="flex items-center gap-3 text-sky-500 mb-2">
+                                <i class="fa-solid fa-bullseye text-2xl"></i>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Visi Sekolah</h3>
+                            </div>
+                            <p id="visi-teks" class="text-slate-700 dark:text-slate-200 font-semibold italic text-sm sm:text-base bg-sky-50 dark:bg-sky-950/40 p-4 rounded-2xl border border-sky-200 dark:border-sky-800">
+                                "Terwujudnya Peserta Didik yang Bertaqwa, Cerdas, Berkarakter, Menguasai Teknologi, dan Cinta Budaya Lokal Kaili."
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-3 text-emerald-500 mb-2">
+                                <i class="fa-solid fa-list-check text-xl"></i>
+                                <h4 class="font-bold text-slate-900 dark:text-white">Misi Utama</h4>
+                            </div>
+                            <ul id="misi-list" class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside">
+                                <li>Menyelenggarakan pembelajaran aktif, inovatif, dan menyenangkan (PAIKEM).</li>
+                                <li>Integrasi muatan lokal Bahasa Kaili ke dalam kurikulum intrakurikuler dan kokurikuler.</li>
+                                <li>Meningkatkan profesionalisme dan kompetensi tenaga pendidik.</li>
+                                <li>Mewujudkan lingkungan sekolah yang sehat, hijau, dan aman bencana.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-hub" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                    <div class="max-w-3xl mx-auto text-center space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-bold">
+                            <i class="fa-solid fa-link"></i> Integrated Link Hub (s.id / Linktree)
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-black">Pusat Layanan Link Resmi Sekolah</h2>
+                        <p class="text-slate-300 text-sm sm:text-base">
+                            Akses cepat seluruh portal pendaftaran, absensi, rapor digital, dan grup sosial media resmi SD Inpres 1 Tanamodindi.
+                        </p>
+
+                        <!-- Dynamically Rendered Link Buttons -->
+                        <div id="hub-links-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-jadwal" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Kalender Akademik</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Jadwal Pembelajaran & Waktu Operasional</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm text-center">
+                        <i class="fa-solid fa-clock text-amber-500 text-3xl mb-3"></i>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Senin - Kamis</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">07:15 WITA - 12:30 WITA</p>
+                        <span class="inline-block mt-3 text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-full text-slate-500 dark:text-slate-400">KBM Reguler</span>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm text-center">
+                        <i class="fa-solid fa-mosque text-emerald-500 text-3xl mb-3"></i>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Jumat Imtaq</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">07:00 WITA - 11:00 WITA</p>
+                        <span class="inline-block mt-3 text-xs bg-emerald-100 dark:bg-emerald-950 px-3 py-1 rounded-full text-emerald-600 dark:text-emerald-400">Ekskul & Keagamaan</span>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm text-center">
+                        <i class="fa-solid fa-person-running text-sky-500 text-3xl mb-3"></i>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Sabtu Bersih & Ekskul</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">07:15 WITA - 11:30 WITA</p>
+                        <span class="inline-block mt-3 text-xs bg-sky-100 dark:bg-sky-950 px-3 py-1 rounded-full text-sky-600 dark:text-sky-400">Pramuka & Olahraga</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-berita" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Kabar Sekolah</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Berita & Pengumuman Terbaru</h2>
+                    </div>
+                    <span class="text-xs text-slate-500">Update berkala kegiatan siswa & informasi kedinasan</span>
+                </div>
+
+                <div id="berita-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="section-guru" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">SDM Berkualitas</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Direktori Guru & Tenaga Kependidikan</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Pendidik yang berdedikasi membimbing dan mengajar murid SD Inpres 1 Tanamodindi.</p>
+                </div>
+
+                <div id="guru-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="section-dokumen" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="bg-slate-100 dark:bg-slate-800/80 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Transparansi Administrasi</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Dokumen, Modul Ajar & Surat Edaran</h2>
+                        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-1">Unduh dokumen kebutuhan siswa, guru, serta wali murid secara langsung.</p>
+                    </div>
+
+                    <div id="dokumen-list" class="space-y-3">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-galeri" class="scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">Dokumentasi</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Galeri Kegiatan Sekolah</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Momen kebersamaan, belajar mengajar, dan prestasi di SD Inpres 1 Tanamodindi Palu.</p>
+                </div>
+
+                <div id="galeri-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+            <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-bold text-lg">SD Inpres 1 Tanamodindi</div>
+                        <div class="text-xs text-slate-500">Kecamatan Mantikulore, Kota Palu</div>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Mewujudkan generasi penerus bangsa di Sulawesi Tengah yang unggul akademis, bertakwa, berkarakter, dan berakar kuat pada nilai-nilai budaya daerah.
+                </p>
+            </div>
+
+            <div class="md:col-span-3 space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Tautan Cepat</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#section-mulok" class="hover:text-amber-400 transition">Muatan Lokal Kaili</a></li>
+                    <li><a href="#section-profil" class="hover:text-amber-400 transition">Visi & Misi Sekolah</a></li>
+                    <li><a href="#section-guru" class="hover:text-amber-400 transition">Direktori Guru</a></li>
+                    <li><a href="#section-dokumen" class="hover:text-amber-400 transition">Download Dokumen</a></li>
+                    <li><a href="#section-hub" class="hover:text-amber-400 transition">Pusat Link s.id</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Kontak & Lokasi</h4>
+                <div class="text-xs space-y-2 text-slate-400">
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-location-dot mt-0.5 text-amber-400"></i> Jl. Tanamodindi No. 12, Tanamodindi, Kec. Mantikulore, Palu, Sulawesi Tengah 94111</p>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-amber-400"></i> info@sdinpres1tanamodindi.sch.id</p>
+                    <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-amber-400"></i> (0451) 421-987</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 SD Inpres 1 Tanamodindi Kota Palu. Hak Cipta Dilindungi.</p>
+            <p class="flex items-center gap-1">Dikelola via <span class="text-amber-400 font-semibold">CMS Admin Panel</span></p>
+        </div>
+    </footer>
+
+
+    <!-- ========================================================================= -->
+    <!-- ========================================================================= -->
+    
+    <!-- ADMIN AUTH & CMS DASHBOARD MODAL CONTAINER -->
+    <div id="admin-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-5xl rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col max-h-[92vh]">
+            
+            <!-- Modal Header -->
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between border-b border-slate-800 shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-extrabold text-sm shadow">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base leading-tight">Panel Pengontrol CMS Website</h3>
+                        <p class="text-xs text-slate-400">SD Inpres 1 Tanamodindi Kota Palu</p>
+                    </div>
+                </div>
+                <button onclick="closeAdminModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-sm transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- LOGIN FORM (When Not Authenticated) -->
+            <div id="admin-login-view" class="p-8 space-y-6 max-w-md mx-auto my-auto w-full">
+                <div class="text-center space-y-2">
+                    <div class="w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto text-2xl font-bold mb-2">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 dark:text-white">Masuk CMS Admin</h4>
+                    <p class="text-xs text-slate-500">Masukkan kredensial pengelola website sekolah</p>
+                </div>
+
+                <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Username</label>
+                        <input type="text" id="login-user" required value="admin" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Password</label>
+                        <input type="password" id="login-pass" required value="admin123" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                        <p class="text-[11px] text-slate-500 mt-1">Default: username <code class="bg-slate-100 dark:bg-slate-800 px-1 rounded">admin</code>, password <code class="bg-slate-100 dark:bg-slate-800 px-1 rounded">admin123</code></p>
+                    </div>
+                    <button type="submit" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm transition shadow-lg shadow-amber-500/20">
+                        Masuk ke Dashboard CMS
+                    </button>
+                </form>
+            </div>
+
+            <!-- AUTHENTICATED DASHBOARD VIEW -->
+            <div id="admin-dashboard-view" class="hidden flex flex-col md:flex-row flex-grow overflow-hidden">
+                
+                <!-- Sidebar Nav Tabs -->
+                <div class="w-full md:w-64 bg-slate-50 dark:bg-slate-950 border-r border-slate-200 dark:border-slate-800 p-4 space-y-1 overflow-y-auto shrink-0">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-3 mb-2">Kontrol Tampilan & Font</div>
+                    
+                    <button onclick="switchCmsTab('tab-visibilitas')" id="btn-tab-visibilitas" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 transition active-tab">
+                        <i class="fa-solid fa-eye text-amber-500 w-4"></i> Show/Hide & Font
+                    </button>
+
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-3 mt-4 mb-2">Manajemen Konten (CRUD)</div>
+
+                    <button onclick="switchCmsTab('tab-profil')" id="btn-tab-profil" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-building-columns text-sky-500 w-4"></i> Identitas & Profil
+                    </button>
+                    <button onclick="switchCmsTab('tab-berita')" id="btn-tab-berita" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-newspaper text-emerald-500 w-4"></i> Berita & Pengumuman
+                    </button>
+                    <button onclick="switchCmsTab('tab-guru')" id="btn-tab-guru" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-user-graduate text-purple-500 w-4"></i> Guru & Staf
+                    </button>
+                    <button onclick="switchCmsTab('tab-dokumen')" id="btn-tab-dokumen" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-file-arrow-down text-rose-500 w-4"></i> Dokumen & Unduhan
+                    </button>
+                    <button onclick="switchCmsTab('tab-galeri')" id="btn-tab-galeri" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-images text-indigo-500 w-4"></i> Galeri Foto
+                    </button>
+                    <button onclick="switchCmsTab('tab-hub')" id="btn-tab-hub" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-share-nodes text-blue-500 w-4"></i> Hub Link (s.id)
+                    </button>
+                    
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-3 mt-4 mb-2">Sistem</div>
+
+                    <button onclick="switchCmsTab('tab-keamanan')" id="btn-tab-keamanan" class="cms-tab-btn w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                        <i class="fa-solid fa-shield-halved text-amber-500 w-4"></i> Tema & Keamanan
+                    </button>
+
+                    <div class="pt-6">
+                        <button onclick="handleAdminLogout()" class="w-full px-3 py-2 rounded-xl border border-red-500/30 text-red-500 hover:bg-red-500/10 text-xs font-bold transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-right-from-bracket"></i> Keluar Admin
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Content Panel -->
+                <div class="flex-grow p-6 overflow-y-auto custom-scrollbar">
+
+                    <div id="tab-visibilitas" class="cms-tab-content space-y-6">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="fa-solid fa-eye text-amber-500"></i> Kontrol Visibilitas Seksi Tampilan Website
+                            </h4>
+                            <p class="text-xs text-slate-500">Aktifkan atau sembunyikan seksi di halaman utama website secara realtime sesuai kebutuhan sekolah.</p>
+                        </div>
+
+                        <!-- Toggle Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            
+                            <!-- Toggle Item: Mulok Kaili -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Muatan Lokal Kaili</div>
+                                    <div class="text-xs text-slate-500">Seksi Kebudayaan & Bahasa Kaili</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-mulok" onchange="updateVisibility('mulok', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Sejarah & Visi Misi -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Sejarah, Visi & Misi</div>
+                                    <div class="text-xs text-slate-500">Profil ringkas sekolah</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-profil" onchange="updateVisibility('profil', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Sambutan Kepsek -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Sambutan Kepala Sekolah</div>
+                                    <div class="text-xs text-slate-500">Kartu pesan pimpinan sekolah</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-sambutan" onchange="updateVisibility('sambutan', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Guru & Staf -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Direktori Guru & Staf</div>
+                                    <div class="text-xs text-slate-500">Daftar nama dan foto tenaga pendidik</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-guru" onchange="updateVisibility('guru', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Dokumen Unduhan -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Dokumen & Area Unduhan</div>
+                                    <div class="text-xs text-slate-500">Berkas surat, modul & LKPD</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-dokumen" onchange="updateVisibility('dokumen', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Hub Tautan Resmi -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Hub Tautan Resmi (s.id)</div>
+                                    <div class="text-xs text-slate-500">Banner Linktree & Tautan Cepat</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-hub" onchange="updateVisibility('hub', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Jadwal Pembelajaran -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Jadwal Akademik</div>
+                                    <div class="text-xs text-slate-500">Waktu operasional & KBM</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-jadwal" onchange="updateVisibility('jadwal', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Berita & Pengumuman -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Berita & Pengumuman</div>
+                                    <div class="text-xs text-slate-500">Informasi postingan kegiatan</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-berita" onchange="updateVisibility('berita', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item: Galeri Foto -->
+                            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 sm:col-span-2">
+                                <div>
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Galeri Foto Kegiatan</div>
+                                    <div class="text-xs text-slate-500">Album kolesi foto kegiatan siswa & guru</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="toggle-galeri" onchange="updateVisibility('galeri', this.checked)" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <!-- FONT SELECTION SECTION -->
+                        <div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-4">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                    <i class="fa-solid fa-font text-sky-500"></i> Kustomisasi Tipografi & Font Website
+                                </h4>
+                                <p class="text-xs text-slate-500">Pilih jenis font Google Fonts populer yang langsung diterapkan di seluruh portal secara seketika.</p>
+                            </div>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                <button onclick="changeWebsiteFont('Plus Jakarta Sans')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Plus Jakarta Sans</div>
+                                    <div class="text-xs text-slate-500">Default Modern</div>
+                                </button>
+                                <button onclick="changeWebsiteFont('Poppins')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Poppins', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Poppins</div>
+                                    <div class="text-xs text-slate-500">Friendly & Clean</div>
+                                </button>
+                                <button onclick="changeWebsiteFont('Inter')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Inter', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Inter</div>
+                                    <div class="text-xs text-slate-500">Sleek & Professional</div>
+                                </button>
+                                <button onclick="changeWebsiteFont('Nunito')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Nunito', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Nunito</div>
+                                    <div class="text-xs text-slate-500">Rounded & Warm</div>
+                                </button>
+                                <button onclick="changeWebsiteFont('Roboto')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Roboto', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Roboto</div>
+                                    <div class="text-xs text-slate-500">Classic Standard</div>
+                                </button>
+                                <button onclick="changeWebsiteFont('Outfit')" class="font-card p-4 rounded-2xl border text-left transition space-y-1 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:border-amber-500" style="font-family: 'Outfit', sans-serif;">
+                                    <div class="font-bold text-sm text-slate-900 dark:text-white">Outfit</div>
+                                    <div class="text-xs text-slate-500">Stylish & Geometric</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-profil" class="cms-tab-content space-y-6 hidden">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Identitas, Sambutan & Sejarah Sekolah</h4>
+                            <p class="text-xs text-slate-500">Ubah teks sejarah, sambutan kepala sekolah, visi dan misi.</p>
+                        </div>
+
+                        <form onsubmit="saveProfilSettings(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Nama Kepala Sekolah</label>
+                                    <input type="text" id="input-kepsek-nama" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">NIP Kepala Sekolah</label>
+                                    <input type="text" id="input-kepsek-nip" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">URL Foto Kepala Sekolah</label>
+                                <input type="url" id="input-kepsek-foto" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Sambutan Kepala Sekolah</label>
+                                <textarea id="input-sambutan-isi" rows="4" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm"></textarea>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Teks Sejarah Singkat</label>
+                                <textarea id="input-sejarah-teks" rows="4" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm"></textarea>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Visi Sekolah</label>
+                                <textarea id="input-visi-teks" rows="2" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 dark:border-slate-700 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs shadow">
+                                Simpan Perubahan Profil
+                            </button>
+                        </form>
+                    </div>
+
+                    <div id="tab-berita" class="cms-tab-content space-y-6 hidden">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">Kelola Berita & Pengumuman</h4>
+                                <p class="text-xs text-slate-500">Tambah, edit, dan hapus artikel berita sekolah.</p>
+                            </div>
+                            <button onclick="openFormBerita()" class="px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i> Tambah Berita
+                            </button>
+                        </div>
+
+                        <div id="cms-berita-list" class="space-y-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div id="tab-guru" class="cms-tab-content space-y-6 hidden">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">Kelola Direktori Guru & Staf</h4>
+                                <p class="text-xs text-slate-500">Daftar tenaga pendidik SD Inpres 1 Tanamodindi Palu.</p>
+                            </div>
+                            <button onclick="openFormGuru()" class="px-3 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i> Tambah Guru
+                            </button>
+                        </div>
+
+                        <div id="cms-guru-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div id="tab-dokumen" class="cms-tab-content space-y-6 hidden">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">Kelola Dokumen & Berkas Download</h4>
+                                <p class="text-xs text-slate-500">Tambahkan modul ajar, formulir, atau edaran.</p>
+                            </div>
+                            <button onclick="openFormDokumen()" class="px-3 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i> Tambah Dokumen
+                            </button>
+                        </div>
+
+                        <div id="cms-dokumen-list" class="space-y-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div id="tab-galeri" class="cms-tab-content space-y-6 hidden">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">Kelola Galeri Foto</h4>
+                                <p class="text-xs text-slate-500">Manajemen album foto kegiatan siswa.</p>
+                            </div>
+                            <button onclick="openFormGaleri()" class="px-3 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i> Tambah Foto
+                            </button>
+                        </div>
+
+                        <div id="cms-galeri-list" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div id="tab-hub" class="cms-tab-content space-y-6 hidden">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">Kelola Hub Link Tautan Resmi (s.id)</h4>
+                                <p class="text-xs text-slate-500">Atur tombol tautan cepat pendaftaran, rapor, dan sosial media.</p>
+                            </div>
+                            <button onclick="openFormHub()" class="px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i> Tambah Tautan
+                            </button>
+                        </div>
+
+                        <div id="cms-hub-list" class="space-y-3">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div id="tab-keamanan" class="cms-tab-content space-y-6 hidden">
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Keamanan Kredensial CMS Admin</h4>
+                            <form onsubmit="handlePasswordChange(event)" class="space-y-3 bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Username Baru</label>
+                                    <input type="text" id="change-user" required class="w-full p-2.5 rounded-xl border dark:bg-slate-900 dark:border-slate-700 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Password Baru</label>
+                                    <input type="password" id="change-pass" required class="w-full p-2.5 rounded-xl border dark:bg-slate-900 dark:border-slate-700 text-sm">
+                                </div>
+                                <button type="submit" class="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs shadow">
+                                    Simpan Kredensial Baru
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-200 dark:border-slate-800 space-y-3">
+                            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Reset Data Website ke Standar Awal</h4>
+                            <p class="text-xs text-slate-500">Mengembalikan seluruh data postingan, berita, dan konfigurasi ke pengaturan standar pabrik.</p>
+                            <button onclick="resetDataToDefault()" class="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow">
+                                Reset Semua Data Demo
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="crud-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-lg rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between border-b pb-3 dark:border-slate-800">
+                <h3 id="crud-modal-title" class="font-bold text-slate-900 dark:text-white">Form Input</h3>
+                <button onclick="closeCrudModal()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="crud-modal-body">
+                <!-- Injected Form Fields -->
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <script>
+        function escapeHTML(str) {
+            if (!str) return "";
+            return str.toString().replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+
+        const DEFAULT_STATE = {
+            font: 'Plus Jakarta Sans',
+            visibility: {
+                mulok: true, profil: true, sambutan: true, guru: true,
+                dokumen: true, hub: true, jadwal: true, berita: true, galeri: true
+            },
+            auth: {
+                user: 'admin',
+                pass: 'admin123',
+                isLoggedIn: false
+            },
+            profil: {
+                kepsekNama: 'Dra. Hajah Fatimah, M.Pd.',
+                kepsekNip: 'NIP. 19680312 199203 2 004',
+                kepsekFoto: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+                sambutanJudul: 'Selamat Datang di Website Resmi SD Inpres 1 Tanamodindi',
+                sambutanIsi: "Assalamu'alaikum Warahmatullahi Wabarakatuh dan Salam Sejahtera untuk kita semua. Puji syukur kita panjatkan kehadirat Tuhan Yang Maha Esa atas terwujudnya situs portal resmi sekolah.",
+                sejarah: 'SD Inpres 1 Tanamodindi didirikan untuk melayani kebutuhan pendidikan dasar masyarakat Tanamodindi dan sekitarnya di Kota Palu.',
+                visi: '"Terwujudnya Peserta Didik yang Bertaqwa, Cerdas, Berkarakter, Menguasai Teknologi, dan Cinta Budaya Lokal Kaili."'
+            },
+            berita: [
+                { id: '1', judul: 'Penerimaan Peserta Didik Baru (PPDB) 2026', kategori: 'Pengumuman', tanggal: '10 Mei 2026', ringkasan: 'Pendaftaran murid baru SD Inpres 1 Tanamodindi Kota Palu resmi dibuka.', gambar: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80' }
+            ],
+            guru: [
+                { id: '1', nama: 'Ahmad Dahlan, S.Pd.', jabatan: 'Guru Kelas VI', foto: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80' }
+            ],
+            dokumen: [
+                { id: '1', judul: 'Modul Ajar Bahasa Kaili (PDF)', tipe: 'PDF', ukuran: '2.4 MB', url: '#' }
+            ],
+            galeri: [
+                { id: '1', judul: 'Upacara Bendera', url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80' }
+            ],
+            hub: [
+                { id: '1', label: 'Portal PPDB Online', url: 'https://s.id', ikon: 'fa-solid fa-graduation-cap', deskripsi: 'Pendaftaran Siswa Baru' }
+            ]
+        };
+
+        // Fungsi pemuat data aman (mencegah error jika cache localStorage lama)
+        function loadStateSafely() {
+            const raw = localStorage.getItem('SD_TANAMODINDI_STATE');
+            if (!raw) return DEFAULT_STATE;
+            try {
+                const parsed = JSON.parse(raw);
+                return {
+                    ...DEFAULT_STATE,
+                    ...parsed,
+                    visibility: { ...DEFAULT_STATE.visibility, ...(parsed.visibility || {}) },
+                    profil: { ...DEFAULT_STATE.profil, ...(parsed.profil || {}) },
+                    auth: { ...DEFAULT_STATE.auth, ...(parsed.auth || {}) },
+                    berita: Array.isArray(parsed.berita) && parsed.berita.length ? parsed.berita : DEFAULT_STATE.berita,
+                    guru: Array.isArray(parsed.guru) && parsed.guru.length ? parsed.guru : DEFAULT_STATE.guru,
+                    dokumen: Array.isArray(parsed.dokumen) && parsed.dokumen.length ? parsed.dokumen : DEFAULT_STATE.dokumen,
+                    galeri: Array.isArray(parsed.galeri) && parsed.galeri.length ? parsed.galeri : DEFAULT_STATE.galeri,
+                    hub: Array.isArray(parsed.hub) && parsed.hub.length ? parsed.hub : DEFAULT_STATE.hub
+                };
+            } catch (e) {
+                return DEFAULT_STATE;
+            }
+        }
+
+        let appState = loadStateSafely();
+
+        function saveState() {
+            localStorage.setItem('SD_TANAMODINDI_STATE', JSON.stringify(appState));
+            renderAllViews();
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+            const toast = document.createElement('div');
+            const bgColor = type === 'success' ? 'bg-emerald-600' : 'bg-rose-600';
+            const icon = type === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation';
+
+            toast.className = `${bgColor} text-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 text-xs font-bold transition transform duration-300 translate-y-2 opacity-0 pointer-events-auto`;
+            toast.innerHTML = `<i class="fa-solid ${icon} text-base"></i> <span>${escapeHTML(message)}</span>`;
+            
+            container.appendChild(toast);
+            
+            setTimeout(() => toast.classList.remove('translate-y-2', 'opacity-0'), 10);
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('theme-icon').className = isDark ? 'fa-solid fa-sun text-amber-400' : 'fa-solid fa-moon';
+            document.getElementById('theme-text').textContent = isDark ? 'Mode Terang' : 'Mode Gelap';
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if(menu) menu.classList.toggle('hidden');
+        }
+
+        function changeWebsiteFont(fontName) {
+            appState.font = fontName;
+            document.documentElement.style.setProperty('--font-family-current', `'${fontName}', sans-serif`);
+            showToast(`Font berhasil diubah ke: ${fontName}`);
+            saveState();
+        }
+
+        function updateVisibility(sectionKey, isVisible) {
+            appState.visibility[sectionKey] = isVisible;
+            saveState();
+            showToast(`Seksi ${sectionKey} ${isVisible ? 'ditampilkan' : 'disembunyikan'}`);
+        }
+
+        function applyVisibilityDOM() {
+            const mappings = {
+                mulok: { sec: 'section-mulok', nav: ['nav-mulok', 'mobile-nav-mulok'] },
+                profil: { sec: 'section-profil', nav: ['nav-profil', 'mobile-nav-profil'] },
+                sambutan: { sec: 'section-sambutan', nav: [] },
+                guru: { sec: 'section-guru', nav: ['nav-guru', 'mobile-nav-guru'] },
+                dokumen: { sec: 'section-dokumen', nav: ['nav-dokumen', 'mobile-nav-dokumen'] },
+                hub: { sec: 'section-hub', nav: ['nav-hub', 'mobile-nav-hub'] },
+                jadwal: { sec: 'section-jadwal', nav: [] },
+                berita: { sec: 'section-berita', nav: ['nav-berita', 'mobile-nav-berita'] },
+                galeri: { sec: 'section-galeri', nav: ['nav-galeri', 'mobile-nav-galeri'] }
+            };
+
+            for (const [key, cfg] of Object.entries(mappings)) {
+                const isVisible = appState.visibility[key] !== false;
+                const sectionEl = document.getElementById(cfg.sec);
+                if (sectionEl) isVisible ? sectionEl.classList.remove('hidden') : sectionEl.classList.add('hidden');
+
+                cfg.nav.forEach(navId => {
+                    const navEl = document.getElementById(navId);
+                    if (navEl) isVisible ? navEl.classList.remove('hidden') : navEl.classList.add('hidden');
+                });
+
+                const toggleInput = document.getElementById(`toggle-${key}`);
+                if (toggleInput) toggleInput.checked = isVisible;
+            }
+        }
+
+        function renderPublicPortal() {
+            if (appState.font) document.documentElement.style.setProperty('--font-family-current', `'${appState.font}', sans-serif`);
+
+            // Profil
+            const kNama = document.getElementById('kepsek-nama'); if(kNama) kNama.textContent = appState.profil.kepsekNama;
+            const kNip = document.getElementById('kepsek-nip'); if(kNip) kNip.textContent = appState.profil.kepsekNip;
+            const kFoto = document.getElementById('kepsek-foto'); if(kFoto) kFoto.src = appState.profil.kepsekFoto;
+            const sJudul = document.getElementById('sambutan-judul'); if(sJudul) sJudul.textContent = appState.profil.sambutanJudul;
+            const sIsi = document.getElementById('sambutan-isi'); if(sIsi) sIsi.textContent = appState.profil.sambutanIsi;
+            const sej = document.getElementById('sejarah-teks'); if(sej) sej.textContent = appState.profil.sejarah;
+            const visi = document.getElementById('visi-teks'); if(visi) visi.textContent = appState.profil.visi;
+
+            // Berita
+            const bGrid = document.getElementById('berita-grid');
+            if(bGrid && appState.berita) {
+                bGrid.innerHTML = appState.berita.map(item => `
+                    <article class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col">
+                        <img src="${escapeHTML(item.gambar)}" class="h-48 w-full object-cover">
+                        <div class="p-6 flex flex-col flex-grow space-y-3">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">${escapeHTML(item.kategori || 'Info')} • ${escapeHTML(item.tanggal || '')}</span>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">${escapeHTML(item.judul)}</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">${escapeHTML(item.ringkasan)}</p>
+                        </div>
+                    </article>
+                `).join('');
+            }
+
+            // Guru
+            const gGrid = document.getElementById('guru-grid');
+            if(gGrid && appState.guru) {
+                gGrid.innerHTML = appState.guru.map(item => `
+                    <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm text-center space-y-3">
+                        <img src="${escapeHTML(item.foto)}" class="w-24 h-24 rounded-2xl object-cover mx-auto shadow">
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm">${escapeHTML(item.nama)}</h4>
+                            <p class="text-xs text-amber-600 mt-0.5">${escapeHTML(item.jabatan)}</p>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Galeri
+            const galGrid = document.getElementById('galeri-grid');
+            if(galGrid && appState.galeri) {
+                galGrid.innerHTML = appState.galeri.map(item => `
+                    <div class="group relative rounded-2xl overflow-hidden aspect-square border border-slate-200 dark:border-slate-700 shadow-sm">
+                        <img src="${escapeHTML(item.url)}" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+                            <span class="text-xs text-white font-semibold">${escapeHTML(item.judul)}</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Dokumen
+            const dokList = document.getElementById('dokumen-list');
+            if(dokList && appState.dokumen) {
+                dokList.innerHTML = appState.dokumen.map(item => `
+                    <div class="flex items-center justify-between p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-file-pdf text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-900 dark:text-white">${escapeHTML(item.judul)}</h4>
+                                <span class="text-xs text-slate-400">${escapeHTML(item.tipe || 'PDF')} • ${escapeHTML(item.ukuran || '1 MB')}</span>
+                            </div>
+                        </div>
+                        <a href="${escapeHTML(item.url)}" onclick="showToast('Mengunduh berkas...')" class="px-3.5 py-1.5 rounded-xl bg-slate-900 dark:bg-slate-800 text-white text-xs font-bold hover:bg-amber-500 hover:text-slate-950 transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-download"></i> Unduh
+                        </a>
+                    </div>
+                `).join('');
+            }
+
+            // Hub Links
+            const hubContainer = document.getElementById('hub-links-container');
+            if(hubContainer && appState.hub) {
+                hubContainer.innerHTML = appState.hub.map(item => `
+                    <a href="${escapeHTML(item.url)}" target="_blank" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 transition flex items-center gap-4 text-left group">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition">
+                            <i class="${escapeHTML(item.ikon || 'fa-solid fa-link')}"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-white">${escapeHTML(item.label)}</div>
+                            <div class="text-xs text-slate-300">${escapeHTML(item.deskripsi)}</div>
+                        </div>
+                    </a>
+                `).join('');
+            }
+
+            applyVisibilityDOM();
+        }
+
+        function openAdminModal() {
+            const modal = document.getElementById('admin-modal');
+            if(!modal) return;
+            modal.classList.remove('hidden');
+            
+            if (appState.auth.isLoggedIn) {
+                document.getElementById('admin-login-view').classList.add('hidden');
+                document.getElementById('admin-dashboard-view').classList.remove('hidden');
+                renderCmsDashboardLists();
+                switchCmsTab('tab-visibilitas');
+            } else {
+                document.getElementById('admin-login-view').classList.remove('hidden');
+                document.getElementById('admin-dashboard-view').classList.add('hidden');
+            }
+        }
+
+        function closeAdminModal() { 
+            const modal = document.getElementById('admin-modal');
+            if(modal) modal.classList.add('hidden'); 
+        }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const u = document.getElementById('login-user').value;
+            const p = document.getElementById('login-pass').value;
+
+            if (u === appState.auth.user && p === appState.auth.pass) {
+                appState.auth.isLoggedIn = true;
+                saveState();
+                showToast('Login Admin Berhasil!');
+                openAdminModal();
+            } else {
+                showToast('Username atau Password salah!', 'error');
+            }
+        }
+
+        function handleAdminLogout() {
+            appState.auth.isLoggedIn = false;
+            saveState();
+            showToast('Anda telah logout.');
+            openAdminModal();
+        }
+
+        function switchCmsTab(tabId) {
+            document.querySelectorAll('.cms-tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.cms-tab-btn').forEach(btn => {
+                btn.classList.remove('active-tab', 'bg-amber-500/10', 'text-amber-500', 'font-bold');
+                btn.classList.add('text-slate-600', 'dark:text-slate-400');
+            });
+
+            const tab = document.getElementById(tabId);
+            if(tab) tab.classList.remove('hidden');
+
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            if (activeBtn) {
+                activeBtn.classList.add('active-tab', 'bg-amber-500/10', 'text-amber-500', 'font-bold');
+                activeBtn.classList.remove('text-slate-600', 'dark:text-slate-400');
+            }
+        }
+
+        function openCrudModal(title, contentHTML) {
+            const modal = document.getElementById('crud-modal');
+            const modalTitle = document.getElementById('crud-modal-title');
+            const modalBody = document.getElementById('crud-modal-body');
+            if (modal && modalTitle && modalBody) {
+                modalTitle.textContent = title;
+                modalBody.innerHTML = contentHTML;
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function closeCrudModal() {
+            const modal = document.getElementById('crud-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function openFormBerita() {
+            openCrudModal('Tambah Berita Baru', `
+                <form onsubmit="submitAddBerita(event)" class="space-y-3">
+                    <div><label class="text-xs font-semibold">Judul Berita</label><input type="text" id="add-b-judul" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Kategori</label><input type="text" id="add-b-kategori" value="Kegiatan" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">URL Gambar</label><input type="url" id="add-b-gambar" required value="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Ringkasan</label><textarea id="add-b-ringkasan" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs" rows="3"></textarea></div>
+                    <button type="submit" class="w-full py-2.5 bg-emerald-600 text-white font-bold rounded-xl text-xs">Simpan Berita</button>
+                </form>
+            `);
+        }
+
+        function submitAddBerita(e) {
+            e.preventDefault();
+            appState.berita.unshift({
+                id: Date.now().toString(),
+                judul: document.getElementById('add-b-judul').value,
+                kategori: document.getElementById('add-b-kategori').value,
+                tanggal: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }),
+                gambar: document.getElementById('add-b-gambar').value,
+                ringkasan: document.getElementById('add-b-ringkasan').value
+            });
+            saveState();
+            closeCrudModal();
+            renderCmsDashboardLists();
+            showToast('Berita baru berhasil ditambahkan!');
+        }
+
+        function openFormGuru() {
+            openCrudModal('Tambah Guru / Staf', `
+                <form onsubmit="submitAddGuru(event)" class="space-y-3">
+                    <div><label class="text-xs font-semibold">Nama Lengkap & Gelar</label><input type="text" id="add-g-nama" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Jabatan / Pengampu</label><input type="text" id="add-g-jabatan" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">URL Foto Profile</label><input type="url" id="add-g-foto" value="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <button type="submit" class="w-full py-2.5 bg-purple-600 text-white font-bold rounded-xl text-xs">Simpan Data Guru</button>
+                </form>
+            `);
+        }
+
+        function submitAddGuru(e) {
+            e.preventDefault();
+            appState.guru.push({
+                id: Date.now().toString(),
+                nama: document.getElementById('add-g-nama').value,
+                jabatan: document.getElementById('add-g-jabatan').value,
+                foto: document.getElementById('add-g-foto').value
+            });
+            saveState();
+            closeCrudModal();
+            renderCmsDashboardLists();
+            showToast('Guru berhasil ditambahkan!');
+        }
+
+        function openFormDokumen() {
+            openCrudModal('Tambah Dokumen Unduhan', `
+                <form onsubmit="submitAddDokumen(event)" class="space-y-3">
+                    <div><label class="text-xs font-semibold">Judul Dokumen</label><input type="text" id="add-d-judul" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Format Tipe (PDF / DOCX)</label><input type="text" id="add-d-tipe" value="PDF" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Ukuran File</label><input type="text" id="add-d-ukuran" value="1.2 MB" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <button type="submit" class="w-full py-2.5 bg-rose-600 text-white font-bold rounded-xl text-xs">Simpan Dokumen</button>
+                </form>
+            `);
+        }
+
+        function submitAddDokumen(e) {
+            e.preventDefault();
+            appState.dokumen.push({
+                id: Date.now().toString(),
+                judul: document.getElementById('add-d-judul').value,
+                tipe: document.getElementById('add-d-tipe').value,
+                ukuran: document.getElementById('add-d-ukuran').value,
+                url: '#'
+            });
+            saveState();
+            closeCrudModal();
+            renderCmsDashboardLists();
+            showToast('Dokumen baru telah ditambahkan!');
+        }
+
+        function openFormGaleri() {
+            openCrudModal('Tambah Foto Galeri', `
+                <form onsubmit="submitAddGaleri(event)" class="space-y-3">
+                    <div><label class="text-xs font-semibold">Judul / Caption Foto</label><input type="text" id="add-gl-judul" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">URL Foto Gambar</label><input type="url" id="add-gl-url" value="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <button type="submit" class="w-full py-2.5 bg-indigo-600 text-white font-bold rounded-xl text-xs">Simpan Foto</button>
+                </form>
+            `);
+        }
+
+        function submitAddGaleri(e) {
+            e.preventDefault();
+            appState.galeri.push({
+                id: Date.now().toString(),
+                judul: document.getElementById('add-gl-judul').value,
+                url: document.getElementById('add-gl-url').value
+            });
+            saveState();
+            closeCrudModal();
+            renderCmsDashboardLists();
+            showToast('Foto galeri ditambahkan!');
+        }
+
+        function openFormHub() {
+            openCrudModal('Tambah Link s.id', `
+                <form onsubmit="submitAddHub(event)" class="space-y-3">
+                    <div><label class="text-xs font-semibold">Label Tombol</label><input type="text" id="add-h-label" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">Deskripsi Ringkas</label><input type="text" id="add-h-deskripsi" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <div><label class="text-xs font-semibold">URL Tautan (https://s.id/...)</label><input type="url" id="add-h-url" value="https://s.id" required class="w-full p-2.5 rounded-xl border dark:bg-slate-800 text-xs"></div>
+                    <button type="submit" class="w-full py-2.5 bg-blue-600 text-white font-bold rounded-xl text-xs">Simpan Link</button>
+                </form>
+            `);
+        }
+
+        function submitAddHub(e) {
+            e.preventDefault();
+            appState.hub.push({
+                id: Date.now().toString(),
+                label: document.getElementById('add-h-label').value,
+                deskripsi: document.getElementById('add-h-deskripsi').value,
+                url: document.getElementById('add-h-url').value,
+                ikon: 'fa-solid fa-link'
+            });
+            saveState();
+            closeCrudModal();
+            renderCmsDashboardLists();
+            showToast('Link hub resmi disimpan!');
+        }
+
+        function deleteBerita(id) { appState.berita = appState.berita.filter(x => x.id !== id); saveState(); renderCmsDashboardLists(); showToast('Berita telah dihapus.'); }
+        function deleteGuru(id) { appState.guru = appState.guru.filter(x => x.id !== id); saveState(); renderCmsDashboardLists(); showToast('Guru telah dihapus.'); }
+        function deleteDokumen(id) { appState.dokumen = appState.dokumen.filter(x => x.id !== id); saveState(); renderCmsDashboardLists(); showToast('Dokumen telah dihapus.'); }
+        function deleteGaleri(id) { appState.galeri = appState.galeri.filter(x => x.id !== id); saveState(); renderCmsDashboardLists(); showToast('Foto galeri telah dihapus.'); }
+        function deleteHub(id) { appState.hub = appState.hub.filter(x => x.id !== id); saveState(); renderCmsDashboardLists(); showToast('Tautan link hub telah dihapus.'); }
+
+        function renderCmsDashboardLists() {
+            const inKepsek = document.getElementById('input-kepsek-nama'); if(inKepsek) inKepsek.value = appState.profil.kepsekNama;
+            const inNip = document.getElementById('input-kepsek-nip'); if(inNip) inNip.value = appState.profil.kepsekNip;
+            const inFoto = document.getElementById('input-kepsek-foto'); if(inFoto) inFoto.value = appState.profil.kepsekFoto;
+            const inSambutan = document.getElementById('input-sambutan-isi'); if(inSambutan) inSambutan.value = appState.profil.sambutanIsi;
+            const inSejarah = document.getElementById('input-sejarah-teks'); if(inSejarah) inSejarah.value = appState.profil.sejarah;
+            const inVisi = document.getElementById('input-visi-teks'); if(inVisi) inVisi.value = appState.profil.visi;
+            const chUser = document.getElementById('change-user'); if(chUser) chUser.value = appState.auth.user;
+
+            const bList = document.getElementById('cms-berita-list');
+            if (bList && appState.berita) {
+                bList.innerHTML = appState.berita.map(b => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border dark:border-slate-700">
+                        <div class="flex items-center gap-3">
+                            <img src="${escapeHTML(b.gambar)}" class="w-12 h-12 rounded-lg object-cover">
+                            <div>
+                                <div class="font-bold text-xs text-slate-900 dark:text-white">${escapeHTML(b.judul)}</div>
+                                <div class="text-[10px] text-slate-400">${escapeHTML(b.kategori || 'Info')} • ${escapeHTML(b.tanggal || '')}</div>
+                            </div>
+                        </div>
+                        <button onclick="deleteBerita('${b.id}')" class="text-red-500 hover:text-red-700 p-2 text-xs"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `).join('');
+            }
+
+            const gList = document.getElementById('cms-guru-list');
+            if (gList && appState.guru) {
+                gList.innerHTML = appState.guru.map(g => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border dark:border-slate-700">
+                        <div class="flex items-center gap-2.5">
+                            <img src="${escapeHTML(g.foto)}" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <div class="font-bold text-xs text-slate-900 dark:text-white">${escapeHTML(g.nama)}</div>
+                                <div class="text-[10px] text-amber-500">${escapeHTML(g.jabatan)}</div>
+                            </div>
+                        </div>
+                        <button onclick="deleteGuru('${g.id}')" class="text-red-500 hover:text-red-700 p-2 text-xs"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `).join('');
+            }
+
+            const dList = document.getElementById('cms-dokumen-list');
+            if (dList && appState.dokumen) {
+                dList.innerHTML = appState.dokumen.map(d => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border dark:border-slate-700">
+                        <div>
+                            <div class="font-bold text-xs text-slate-900 dark:text-white">${escapeHTML(d.judul)}</div>
+                            <div class="text-[10px] text-slate-400">${escapeHTML(d.tipe || 'PDF')} • ${escapeHTML(d.ukuran || '1 MB')}</div>
+                        </div>
+                        <button onclick="deleteDokumen('${d.id}')" class="text-red-500 hover:text-red-700 p-2 text-xs"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `).join('');
+            }
+
+            const glList = document.getElementById('cms-galeri-list');
+            if (glList && appState.galeri) {
+                glList.innerHTML = appState.galeri.map(g => `
+                    <div class="relative group rounded-xl overflow-hidden aspect-video border dark:border-slate-700">
+                        <img src="${escapeHTML(g.url)}" class="w-full h-full object-cover">
+                        <button onclick="deleteGaleri('${g.id}')" class="absolute top-2 right-2 bg-red-600 text-white w-6 h-6 rounded-full text-xs flex items-center justify-center">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                `).join('');
+            }
+
+            const hList = document.getElementById('cms-hub-list');
+            if (hList && appState.hub) {
+                hList.innerHTML = appState.hub.map(h => `
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border dark:border-slate-700">
+                        <div>
+                            <div class="font-bold text-xs text-slate-900 dark:text-white">${escapeHTML(h.label)}</div>
+                            <div class="text-[10px] text-slate-400">${escapeHTML(h.deskripsi)}</div>
+                        </div>
+                        <button onclick="deleteHub('${h.id}')" class="text-red-500 hover:text-red-700 p-2 text-xs"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function saveProfilSettings(e) {
+            e.preventDefault();
+            appState.profil.kepsekNama = document.getElementById('input-kepsek-nama').value;
+            appState.profil.kepsekNip = document.getElementById('input-kepsek-nip').value;
+            appState.profil.kepsekFoto = document.getElementById('input-kepsek-foto').value;
+            appState.profil.sambutanIsi = document.getElementById('input-sambutan-isi').value;
+            appState.profil.sejarah = document.getElementById('input-sejarah-teks').value;
+            appState.profil.visi = document.getElementById('input-visi-teks').value;
+            saveState();
+            showToast('Profil sekolah berhasil diperbarui!');
+        }
+
+        function handlePasswordChange(e) {
+            e.preventDefault();
+            appState.auth.user = document.getElementById('change-user').value;
+            appState.auth.pass = document.getElementById('change-pass').value;
+            saveState();
+            showToast('Username dan Password berhasil diperbarui!');
+        }
+
+        function resetDataToDefault() {
+            appState = JSON.parse(JSON.stringify(DEFAULT_STATE));
+            saveState();
+            renderCmsDashboardLists();
+            showToast('Data telah dikembalikan ke pengaturan awal.');
+        }
+
+        function renderAllViews() { renderPublicPortal(); }
+        
+        window.onload = function() { renderAllViews(); };
+    </script>
 </body>
 </html>
