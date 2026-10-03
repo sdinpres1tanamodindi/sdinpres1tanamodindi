@@ -1,0 +1,37 @@
+{
+  "header_nav": {
+    "menu_name": "Header & Navigasi",
+    "is_visible": true,
+    "font_family": "Inter",
+    "font_color": "#111827",
+    "font_size": 16
+  },
+  "hero_stats": {
+    "menu_name": "Hero & Statistik",
+    "is_visible": true,
+    "font_family": "Roboto",
+    "font_color": "#1f2937",
+    "font_size": 32
+  },
+  "mulok_kaili": {
+    "menu_name": "Mulok Kaili",
+    "is_visible": true,
+    "font_family": "Poppins",
+    "font_color": "#0f172a",
+    "font_size": 24
+  },
+  "profil_sambutan": {
+    "menu_name": "Profil & Sambutan",
+    "is_visible": true,
+    "font_family": "Open Sans",
+    "font_color": "#1e293b",
+    "font_size": 24
+  },
+  "konten_publik": {
+    "menu_name": "Seksi Konten Publik",
+    "is_visible": true,
+    "font_family": "Arial",
+    "font_color": "#334155",
+    "font_size": 20
+  }
+}
